@@ -18,8 +18,12 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("https://user-images.githubusercontent.com/67826184/98448450-66171b00-212c-11eb-92e9-e818bf89a22c.jpg");
+  background-image: url("https://user-images.githubusercontent.com/67826184/98449372-564f0500-2133-11eb-8428-dacb45a7dce9.jpg");
   min-height: 100%;
+}
+@media screen and (max-width: 600px) {
+.bgimg-1 {
+  background-image: url("https://user-images.githubusercontent.com/67826184/98448450-66171b00-212c-11eb-92e9-e818bf89a22c.jpg");
 }
 .w3-bar .w3-button {
   padding: 16px;
@@ -29,7 +33,7 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-blue w3-card" id="myNavbar">
+  <div class="w3-bar w3-card w3-blue" id="myNavbar" style="opacity: 0.7;">
     <a href="#home" class="w3-bar-item w3-button w3-wide">DIGDOC</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
@@ -77,7 +81,7 @@ body, html {
 
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">WHATS THE FUTURE OF HEALTHCARE ?</h3>
+  <h3 class="w3-center">WHAT'S THE FUTURE OF HEALTHCARE ?</h3>
   <p class="w3-center w3-large">checkout what the future brings</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-col l3 m6 w3-margin-bottom">
@@ -355,9 +359,9 @@ body, html {
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
+<footer class="w3-center w3-padding-64" style="background-color: #3636a3;">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
+  <div class="w3-xlarge w3-section w3-black">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -365,7 +369,7 @@ body, html {
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Digital Doctor</a></p>
 </footer>
  
 <script>
