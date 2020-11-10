@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-<title>Digital Doctor</title>
+<title><i class="fas fa-user-md"></i> Digital Doctor</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <script>
 function w3_open() {
   if (document.getElementById("mySidebar").style.display === 'block') {
@@ -209,10 +209,10 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button w3-wide">DIGDOC</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user-md"></i> ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOG</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-book"></i> LIBRARY</a>
+      <a href="#library" class="w3-bar-item w3-button"><i class="fas fa-book-medical"></i> LIBRARY</a>
       <a href="#contact" class="w3-bar-item w3-button" onclick="openSearch()"><i class="fa fa-search"></i> SEARCH</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -228,8 +228,8 @@ body, html {
   <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
   <div class="overlay-content">
     <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
+      <input type="text" placeholder="Search..." name="search">
+      <button class="w3-button w3-blue" type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>
 </div>
@@ -238,9 +238,9 @@ body, html {
 <nav class="w3-sidebar w3-bar-block w3-blue w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; opacity: 0.9;" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16"><i class="fa fa-close"></i></a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
-  <a href="#blog" onclick="w3_close()" class="w3-bar-item w3-button">LIBRARY</a>
-  <a href="#libray" onclick="openSearch()" class="w3-bar-item w3-button">SEARCH</a>
+  <a href="#blog" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
+  <a href="#library" onclick="w3_close()" class="w3-bar-item w3-button">LIBRARY</a>
+  <a href="#" onclick="openSearch()" class="w3-bar-item w3-button">SEARCH</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
