@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script>
-
 function w3_open() {
   if (document.getElementById("mySidebar").style.display === 'block') {
     document.getElementById("mySidebar").style.display = 'none';
@@ -22,6 +21,17 @@ function w3_open() {
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 };
+
+// Search box js
+
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+
   // Image slide
 document.addEventListener('DOMContentLoaded', function() {
 var myIndex = 0;
@@ -90,6 +100,86 @@ body, html {
   height: 100%;
   line-height: 1.8;
 }
+/* Search box */
+
+* {
+  box-sizing: border-box;
+}
+
+.openBtn {
+  background: #f1f1f1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.openBtn:hover {
+  background: #bbb;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: rgb(73, 117, 238);
+}
+
+/* Search box ends */
 
 /* Full height image header */
 .bgimg-1 {
@@ -123,7 +213,7 @@ body, html {
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOG</a>
       <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-book"></i> LIBRARY</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-search"></i> SEARCH</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="openSearch()"><i class="fa fa-search"></i> SEARCH</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -132,14 +222,25 @@ body, html {
     </a>
   </div>
 </div>
+<!-- Search box code -->
+
+<div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+  <div class="overlay-content">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-blue w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; opacity: 0.9;" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16"><i class="fa fa-close"></i></a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">LIBRARY</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
+  <a href="#blog" onclick="w3_close()" class="w3-bar-item w3-button">LIBRARY</a>
+  <a href="#libray" onclick="openSearch()" class="w3-bar-item w3-button">SEARCH</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
