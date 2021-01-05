@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
-<title> Digital Doctor</title>
+<title> Arewa Medics</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Aref Ruqaa' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Warnes' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Zilla Slab Highlight' rel='stylesheet'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
 <script>
 function w3_open() {
   if (document.getElementById("mySidebar").style.display === 'block') {
@@ -31,65 +38,6 @@ function closeSearch() {
   document.getElementById("myOverlay").style.display = "none";
 }
 
-  // Image slide
-document.addEventListener('DOMContentLoaded', function() {
-var myIndex = 0;
-var Index = 0;
-var Index1 = 0;
-var Index2 = 0;
-carousel();
-slide();
-slide1();
-slide2();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 3000); // Change image every 3 seconds
-};
-
-function slide() {
-  var i;
-  var y = document.getElementsByClassName("mySlides1");
-  for (i = 0; i < y.length; i++) {
-    y[i].style.display = "none";  
-  }
-  Index++;
-  if (Index > y.length) {Index = 1}    
-  y[Index-1].style.display = "block";  
-  setTimeout(slide, 3000); // Change image every 3 seconds
-};
-
-function slide1() {
-  var i;
-  var z = document.getElementsByClassName("mySlides2");
-  for (i = 0; i < z.length; i++) {
-    z[i].style.display = "none";  
-  }
-  Index1++;
-  if (Index1 > z.length) {Index1 = 1}    
-  z[Index1-1].style.display = "block";  
-  setTimeout(slide1, 3000); // Change image every 3 seconds
-};
-
-function slide2() {
-  var i;
-  var w = document.getElementsByClassName("mySlides3");
-  for (i = 0; i < w.length; i++) {
-    w[i].style.display = "none";  
-  }
-  Index2++;
-  if (Index2 > w.length) {Index2 = 1}    
-  w[Index2-1].style.display = "block";  
-  setTimeout(slide2, 3000); // Change image every 3 seconds
-};
-});
 </script>
 
 <style>
@@ -97,8 +45,34 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
   height: 100%;
-  line-height: 1.8;
+  line-height: 1.2;
 }
+.w3-button {
+  color: white;
+}
+.logo {
+    font-family: 'Warnes';font-size: 22px;
+}
+.mission{
+  font-family: 'Zilla Slab Highlight';font-size: 18px;
+}
+.navlinks {
+  font-family: 'Amita';font-size: 20px;
+}
+.desc {
+  font-family: Artifika; font-size: 30px;
+  line-height: 1;
+}
+@media screen and (max-width: 600px) {
+.desc {
+  font-family: Artifika; font-size: 20px;
+  line-height: 1;
+}
+}
+.trackspan {
+    font-family: 'Aref Ruqaa';font-size: 18px;
+}
+
 /* Search box */
 
 * {
@@ -185,7 +159,7 @@ body, html {
   background-position: center;
   background-size: cover;
   background-image: url("https://user-images.githubusercontent.com/67826184/98449372-564f0500-2133-11eb-8428-dacb45a7dce9.jpg");
-  min-height: 100%;
+  min-height: 70%;
 }
 @media screen and (max-width: 600px) {
 .bgimg-1 {
@@ -195,28 +169,26 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
-.mySlides {display: none;}
-.mySlides1 {display: none;}
-.mySlides2 {display: none;}
-.mySlides3 {display: none;}
 </style>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-card w3-blue" id="myNavbar" style="opacity: 0.8;">
-    <a href="#home" class="w3-bar-item w3-button w3-wide"><i class="fa fa-home"></i> DIGDOC</a>
+  <div class="w3-bar w3-card w3-blue" id="myNavbar" style="opacity: 0.9;">
+    <a href="#home" class="w3-bar-item w3-large w3-button w3-wide"><div class="logo"><i class="fa fa-home"></i> ArewaMedics</div></a>
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user-md"></i> ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOG</a>
-      <a href="#library" class="w3-bar-item w3-button"><i class="fa fa-book"></i> LIBRARY</a>
-      <a href="#contact" class="w3-bar-item w3-button" onclick="openSearch()"><i class="fa fa-search"></i> SEARCH</a>
+    <div class="w3-right w3-large w3-hide-small">
+      <div class="navlinks">
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user-md"></i> About</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Team</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Blog</a>
+      <a href="#library" class="w3-bar-item w3-button"><i class="fa fa-book"></i> Library</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="openSearch()"><i class="fa fa-search"></i> Search</a>
+      </div>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-xlarge w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -245,74 +217,85 @@ body, html {
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-display-left w3-text-white" style="padding: 48px;">
-    <span class="w3-jumbo w3-hide-small">Digital Doctor</span><br>
-    <span class="w3-xxxlarge w3-hide-large w3-hide-medium">Digital Doctor</span><br>
-    <span class="w3-xlarge">Revolutionize healthcare into the world of technologies.</span>
-    <p><a href="#articles" class="w3-button w3-white w3-padding-large w3-medium w3-margin-top w3-opacity w3-hover-opacity-off">Our Latest Articles</a></p>
+  <div class="w3-display-left w3-text-white" style="padding: 80px;">
+    <div class="mission w3-text-black">Our mission</div>
+    <div class="desc"><p>Revolutionize healthcare.</p><p>From despair to hope.</p><p>Turn your dreams to Reality.</p></div>
   </div> 
-  <div class="w3-display-bottomleft w3-text-white w3-xlarge" style="padding:24px 48px;">
+  <div class="w3-display-bottomleft w3-text-white w3-xlarge" style="padding:14px 28px;">
     <a href="google.com"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
     <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <i class="fa fa-youtube w3-red w3-hover-opacity"></i>
   </div>
 </header>
 
 <!-- Top Innovations -->
-<div class="w3-container" style="padding:100px 16px" id="innovations">
-  <h3 class="w3-center"><b>WHAT'S THE FUTURE OF HEALTHCARE ?</b></h3>
-  <p class="w3-center w3-large">Checkout what the future brings into the field</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://user-images.githubusercontent.com/67826184/98442903-2c341d80-2108-11eb-83e7-02e283dab5b4.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>Artificial Intelligence</h3>
-        </div>
-      </div>
+<div class="w3-container" style="padding:0px 0px" id="innovations">
+  <div class="w3-row w3-center" style="margin-top:0px">  
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-blue w3-xlarge w3-padding-28">Pharmaceutical Sciences</li>
+        <li class="w3-padding-10">
+        </li>
+        <li class="w3-padding-10"><b>149</b> Books</li>
+        <li class="w3-light-white w3-padding-20">
+          <button class="w3-button w3-red w3-padding-large">Explore</button>
+        </li>
+      </ul>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://user-images.githubusercontent.com/67826184/98442913-44a43800-2108-11eb-8e31-0b8eb8b9023c.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>Telemedicine</h3>
-        </div>
-      </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-28">Clinical Sciences (MBBS)</li>
+        <li class="w3-padding-10">
+        </li>
+        <li class="w3-padding-10"><b>149</b> Books</li>
+        <li class="w3-light-white w3-padding-20">
+          <button class="w3-button w3-blue w3-padding-large">Explore</button>
+        </li>
+      </ul>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://user-images.githubusercontent.com/67826184/98442924-54bc1780-2108-11eb-9758-119560443435.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>Future of Pharma</h3>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://user-images.githubusercontent.com/67826184/98442934-68677e00-2108-11eb-820c-2cabffef5307.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>Medical Devices</h3>
-        </div>
-      </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-blue w3-xlarge w3-padding-28">Allied Health Sciences</li>
+        <li class="w3-padding-10">
+        </li>
+        <li class="w3-padding-10"><b>149</b> Books</li>
+        <li class="w3-light-white w3-padding-20">
+          <button class="w3-button w3-red w3-padding-large">Explore</button>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
 
-<!-- VR and AR -->
-<div class="w3-container w3-light-grey" style="padding:60px 10px">
-  <div class="w3-row-padding">
-      <div class="w3-content w3-section" style="max-width:500px">
-        <img class="mySlides w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98468118-4853bf80-21d9-11eb-8f61-7a6657bde217.png">
-        <img class="mySlides w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98469397-9c61a280-21df-11eb-965c-157f27211cec.jpeg">
-        <img class="mySlides w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98469622-00d13180-21e1-11eb-9dec-89fcfc247609.jpeg">
-        <img class="mySlides w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98522819-6e2ea200-2275-11eb-8937-54a2e41f46c4.jpg">
+<!-- Jamb track -->
+
+  <div class="w3-row-padding w3-light-grey" style="margin-top: 100px;">
+      <div class="w3-half w3-center">
+        <iframe width="400" height="400" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1">
+        </iframe>
     </div>
-    <p class="w3-center w3-xlarge w3-hide-small">Application of Virtual Reality (VR) and Argumented Reality (AR) for both medical students and physicians in Medical Pracitice.</p>
-    <p class="w3-center w3-hide-medium w3-hide-large"><b>Application of Virtual Reality (VR) and Argumented Reality (AR) for both medical students and physicians in Medical Pracitice.</b></p>
+    <div class="trackspan">
+    <div class="w3-half w3-center"><br/><br/><h1>Start Your Medical School Journey From Scratch. </h1>
+    <p class="w3-center w3-xlarge w3-hide-small"><a href="#">Are you about to start your journey into the medical fields? Here's a complete guide and path from securing good marks in your Jamb upto securing Place into different medical schools in Nigeria.</a></p>
+    <p class="w3-center w3-hide-medium w3-hide-large"><a href="#">Are you about to start your journey into the medical fields? Here's a complete guide and path from securing good marks in your Jamb upto securing Place into different medical schools in Nigeria.</a></p>
   </div>
+</div>
+</div>
+
+<!-- Female medical track -->
+<div class="w3-row-padding w3-light-grey" style="margin-top: 100px;">
+<div class="trackspan">
+<div class="w3-half w3-center"><br/><br/><h1>Women As Health Professionals. </h1>
+<p class="w3-center w3-xlarge w3-hide-small"><a href="#">Are you about to start your journey into the medical fields? Here's a complete guide and path from securing good marks in your Jamb upto securing Place into different medical schools in Nigeria.</a></p>
+<p class="w3-center w3-hide-medium w3-hide-large"><a href="#">Are you about to start your journey into the medical fields? Here's a complete guide and path from securing good marks in your Jamb upto securing Place into different medical schools in Nigeria.</a></p>
+</div>
+</div>
+<div class="w3-half w3-center w3-content w3-section" style="max-width:500px">
+ <img src="https://user-images.githubusercontent.com/67826184/103673352-c506de00-4f7d-11eb-9109-aa0ac4f4226d.jpg" width="500px" alt="nurse" class="responsive">
+  </div>
+</div>
 </div>
 
 <!-- Articles -->
@@ -361,8 +344,7 @@ body, html {
         <li class="w3-blue w3-xlarge w3-padding-32">Basic Medical Sciences</li>
         <li class="w3-padding-16">
           <img class="mySlides1 w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98648011-fe342080-2335-11eb-8c63-ca6556c4288e.png">
-          <img class="mySlides1 w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98648023-01c7a780-2336-11eb-8b13-b6186e0a7d7e.jpg">
-          <img class="mySlides1 w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98648030-05f3c500-2336-11eb-8a58-a91faf9b503a.jpg">
+         
         </li>
         <li class="w3-padding-16"><b>78</b> Books</li>
         <li class="w3-light-grey w3-padding-24">
@@ -375,8 +357,6 @@ body, html {
         <li class="w3-red w3-xlarge w3-padding-48">Clinical Sciences</li>
         <li class="w3-padding-16">
           <img class="mySlides2 w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98530898-d2566380-227f-11eb-82f1-30d24391a04c.png">
-          <img class="mySlides2 w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98530898-d2566380-227f-11eb-82f1-30d24391a04c.png">
-          <img class="mySlides2 w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98530898-d2566380-227f-11eb-82f1-30d24391a04c.png">
         </li>
         <li class="w3-padding-16"><b>149</b> Books</li>
         <li class="w3-light-grey w3-padding-24">
@@ -388,8 +368,6 @@ body, html {
       <ul class="w3-ul w3-white w3-hover-shadow">
         <li class="w3-blue w3-xlarge w3-padding-32">Pharmaceutical Sciences</li>
         <li class="w3-padding-16">
-          <img class="mySlides3 w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98648041-09874c00-2336-11eb-9094-5d79303f7e90.jpg">
-          <img class="mySlides3 w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98648041-09874c00-2336-11eb-9094-5d79303f7e90.jpg">
           <img class="mySlides3 w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98648041-09874c00-2336-11eb-9094-5d79303f7e90.jpg">
         </li>
         <li class="w3-padding-16"><b>90</b> Books</li>
