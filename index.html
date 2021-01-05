@@ -54,7 +54,12 @@ body, html {
     font-family: 'Warnes';font-size: 22px;
 }
 .mission{
-  font-family: 'Zilla Slab Highlight';font-size: 18px;
+  font-family: 'Zilla Slab Highlight';font-size: 23px;
+}
+@media screen and (max-width: 600px) {
+  .mission{
+  font-size: 18px;
+}
 }
 .navlinks {
   font-family: 'Amita';font-size: 20px;
@@ -183,7 +188,7 @@ body, html {
       <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user-md"></i> About</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Team</a>
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Blog</a>
-      <a href="#library" class="w3-bar-item w3-button"><i class="fa fa-book"></i> Library</a>
+      <a href="#library" class="w3-bar-item w3-button"><i class="fa fa-book"></i> Resources</a>
       <a href="#contact" class="w3-bar-item w3-button" onclick="openSearch()"><i class="fa fa-search"></i> Search</a>
       </div>
     </div>
@@ -211,7 +216,7 @@ body, html {
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-center w3-padding-16"><i class="fa fa-close"></i></a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="#blog" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
-  <a href="#library" onclick="w3_close()" class="w3-bar-item w3-button">LIBRARY</a>
+  <a href="#library" onclick="w3_close()" class="w3-bar-item w3-button">RESOURCES</a>
   <a href="#" onclick="openSearch()" class="w3-bar-item w3-button">SEARCH</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
@@ -232,15 +237,15 @@ body, html {
 
 <!-- Top Innovations -->
 <div class="w3-container w3-margin-top" style="padding:0px 0px" id="innovations">
-  <div class="w3-row w3-center">  
+  <div class="w3-row-padding w3-center">  
     <div class="w3-third">
       <ul class="w3-ul w3-white w3-hover-shadow">
         <li class="w3-blue w3-xlarge w3-padding-30">Clinical Sciences (MBBS)</li>
         <li class="w3-padding-10">
           <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103687606-d9a0a180-4f90-11eb-8cce-5cf11cb96cfb.jpg" alt="mbbs">
         </li>
-        <li class="w3-padding-10">Medicine, Surgery, Radiology, Opthalmology, Gyneacology, Orthopeadics, Urology, Cardiology and More.</li>
-        <li class="w3-light-white w3-padding-20">
+        <li class="w3-padding-10">Medicine, Surgery, Radiology, Opthalmology, Gyneacology, Orthopeadics, Cardiology and More.</li>
+        <li class="w3-light-grey w3-padding-20">
           <button class="w3-button w3-red w3-padding-large">Explore Fields</button>
         </li>
       </ul>
@@ -252,7 +257,7 @@ body, html {
           <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103687670-f3da7f80-4f90-11eb-8a66-fe183ca2237f.jpg" alt="Pharma">
         </li>
         <li class="w3-padding-10">Clinical pharmacy, Consulting pharmacy, Industrial pharmacy, Community pharmacy and More.</li>
-        <li class="w3-light-white w3-padding-20">
+        <li class="w3-light-grey w3-padding-20">
           <button class="w3-button w3-red w3-padding-large">Explore Fields</button>
         </li>
       </ul>
@@ -264,7 +269,7 @@ body, html {
           <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103688669-6dbf3880-4f92-11eb-8190-cb920260df9c.jpg" alt="Allied">
         </li>
         <li class="w3-padding-10">Radiography, Nursing, Midwifery, Optometry, Medical lab science, Physiotheraphy and More.</li>
-        <li class="w3-light-white w3-padding-20">
+        <li class="w3-light-grey w3-padding-20">
           <button class="w3-button w3-red w3-padding-large">Explore Fields</button>
         </li>
       </ul>
@@ -343,28 +348,26 @@ body, html {
 
 <!-- Library Section -->
 <div class="w3-container w3-center w3-dark-grey" style="padding:80px 16px" id="library">
-  <h3 style="color:rgb(61, 240, 76);"><b>E-LIBRARY</b></h3>
+  <h3 class="desc"><b>MEDICAL STUDENTS STUDY AND RESEARCH RESOURCES</b></h3>
   <p class="w3-large">Choose the category that fits your needs.</p>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
         <li class="w3-blue w3-xlarge w3-padding-32">Basic Medical Sciences</li>
         <li class="w3-padding-16">
-          <img class="mySlides1 w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98648011-fe342080-2335-11eb-8c63-ca6556c4288e.png">
          
         </li>
         <li class="w3-padding-16"><b>78</b> Books</li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-blue w3-padding-large w3-hover-blue">Explore</button>
+          <button class="w3-button w3-red w3-padding-large w3-hover-blue">Explore</button>
         </li>
       </ul>
     </div>
-    <div class="w3-third">
+    <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-48">Clinical Sciences</li>
+        <li class="w3-blue w3-xlarge w3-padding-32">Clinical Sciences</li>
         <li class="w3-padding-16">
-          <img class="mySlides2 w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98530898-d2566380-227f-11eb-82f1-30d24391a04c.png">
-        </li>
+         </li>
         <li class="w3-padding-16"><b>149</b> Books</li>
         <li class="w3-light-grey w3-padding-24">
           <button class="w3-button w3-red w3-padding-large">Explore</button>
@@ -375,11 +378,44 @@ body, html {
       <ul class="w3-ul w3-white w3-hover-shadow">
         <li class="w3-blue w3-xlarge w3-padding-32">Pharmaceutical Sciences</li>
         <li class="w3-padding-16">
-          <img class="mySlides3 w3-image w3-round-large w3-animate-opacity" src="https://user-images.githubusercontent.com/67826184/98648041-09874c00-2336-11eb-9094-5d79303f7e90.jpg">
-        </li>
+          </li>
         <li class="w3-padding-16"><b>90</b> Books</li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-blue w3-hover-blue w3-padding-large">Explore</button>
+          <button class="w3-button w3-red w3-hover-blue w3-padding-large">Explore</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-blue w3-xlarge w3-padding-32">Basic Medical Sciences</li>
+        <li class="w3-padding-16">
+         
+        </li>
+        <li class="w3-padding-16"><b>78</b> Books</li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-blue">Explore</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-blue w3-xlarge w3-padding-32">Clinical Sciences</li>
+        <li class="w3-padding-16">
+         </li>
+        <li class="w3-padding-16"><b>149</b> Books</li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large">Explore</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-blue w3-xlarge w3-padding-32">Pharmaceutical Sciences</li>
+        <li class="w3-padding-16">
+          </li>
+        <li class="w3-padding-16"><b>90</b> Books</li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-hover-blue w3-padding-large">Explore</button>
         </li>
       </ul>
     </div>
