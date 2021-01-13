@@ -52,7 +52,7 @@ body, html {
   {background-color: rgb(10, 10, 10);
   border: none;
   color: white;
-  padding: 5px 15px;
+  padding: 0px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -61,7 +61,7 @@ body, html {
   border-radius: 16px;}
 
 .logo {
-    font-family: 'Warnes';font-size: 22px;
+    font-family: 'Warnes';font-size: 18px;
 }
 .mission{
   font-family: 'Zilla Slab Highlight';font-size: 23px;
@@ -72,7 +72,7 @@ body, html {
 }
 }
 .navlinks {
-  font-family: 'Amita';font-size: 20px;
+  font-family: 'Amita';font-size: 18px;
 }
 .desc {
   font-family: Artifika; font-size: 30px;
@@ -178,11 +178,12 @@ body, html {
 /* Social media links */
 
 .fa {
-  padding: 10px;
+  padding: 15px;
   font-size: 20px;
   width: 50px;
   text-align: center;
   text-decoration: none;
+  border-radius: 50%;
 }
 
 .fa:hover {
@@ -329,16 +330,16 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-card w3-blue" id="myNavbar" style="opacity: 0.9;">
-    <a href="#home" class="w3-bar-item w3-large w3-button w3-hover-red w3-wide w3-hide-small"><div class="logo"><i class="fa fa-home" style="padding: 0px;"></i> ArewaMedics</div></a>
-    <a href="#home" class="w3-bar-item w3-small w3-hover-red w3-button w3-wide w3-hide-large w3-hide-medium"><span class="logo w3-small"><i class="fa fa-home" style="padding: 0px;"></i> ArewaMedics</span></a>
+    <a href="#home" class="w3-bar-item w3-large w3-button w3-hover-red w3-wide w3-hide-small"><div class="logo"><i class="fa fa-home" style="padding: 0px; font-size: 15px;"></i> ArewaMedics</div></a>
+    <a href="#home" class="w3-bar-item w3-small w3-hover-red w3-button w3-wide w3-hide-large w3-hide-medium"><span class="logo w3-small"><i class="fa fa-home" style="padding: 0px; font-size: 15px;"></i> ArewaMedics</span></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-large w3-hide-small">
       <div class="navlinks">
-      <a href="#about" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-user-md" style="padding: 0px;"></i> About</a>
-      <a href="#team" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-user" style="padding: 0px;"></i> Team</a>
-      <a href="#work" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-th" style="padding: 0px;"></i> Blog</a>
-      <a href="#resources" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-book" style="padding: 0px;"></i> Resources</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hover-red" onclick="openSearch()"><i class="fa fa-search" style="padding: 0px;"></i> Search</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-user-md" style="padding: 0px; font-size: 15px;"></i> About</a>
+      <a href="#team" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-user" style="padding: 0px; font-size: 15px;"></i> Team</a>
+      <a href="#work" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-th" style="padding: 0px; font-size: 15px;"></i> Blog</a>
+      <a href="#resources" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-book" style="padding: 0px; font-size: 15px;"></i> Resources</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hover-red" onclick="openSearch()"><i class="fa fa-search" style="padding: 0px; font-size: 15px;"></i> Search</a>
       </div>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -354,8 +355,8 @@ body, html {
   <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
   <div class="overlay-content">
     <form action="/action_page.php">
-      <input type="text" placeholder="Search..." name="search">
-      <button class="w3-button w3-blue" type="submit"><i class="fa fa-search"></i></button>
+      <input type="text" placeholder="Search..." name="search" style="width: 75%; margin-right: 0px;">
+      <input type="submit" value="Search" style="float: none; font-size: 20px; margin-left: 0px;">
     </form>
   </div>
 </div>
@@ -437,7 +438,7 @@ body, html {
   <div class="trackspan">
     <div class="w3-half w3-center"><br/><br/><h1 class="navlinks w3-hide-small" style="font-size: 60px;">Preparing For Your Medical School Journey From Scratch? </h1>
       <h1 class="navlinks w3-hide-large w3-hide-medium" style="font-size: 30px;">Preparing For Your Medical School Journey From Scratch? </h1>
-      <p class="trackspan w3-left w3-xlarge w3-hide-small">About to start your journey into the medical fields? Here's a complete guide and path for students that wish to opt in to medical schools in Nigeria. <i><b>UTME</b> 
+      <p class="trackspan w3-left w3-xlarge w3-hide-small" style="text-align: justify;">About to start your journey into the medical fields? Here's a complete guide and path for students that wish to opt in to medical schools in Nigeria. <i><b>UTME</b> 
       - <b>Post-UTME</b> - <b>Admission</b></i></p>
       <button class="btn readmore w3-hide-small">Find More</button>
     </div>
@@ -457,7 +458,7 @@ body, html {
   <div class="trackspan">
   <div class="w3-half w3-center"><br/><br/><h1 class="navlinks w3-hide-small" style="font-size: 60px;">Women Healthcare Professions. </h1>
     <h1 class="navlinks w3-hide-large w3-hide-medium" style="font-size: 30px;">Women Healthcare Professions. </h1>
-    <p class="trackspan w3-left w3-xlarge w3-hide-small">Girls' education transforms lives and communities especially in health fields. Our <i><b>Arewamedics Girls Programme</b></i> will enlighten girls about different medical fields careers.</p>
+    <p class="trackspan w3-left w3-xlarge w3-hide-small" style="text-align: justify;">Girls' education transforms lives and communities especially in health fields. Our <i><b>Arewamedics Girls Programme</b></i> will enlighten girls about different medical fields careers.</p>
     <button class="btn readmore w3-hide-small">Find More</button>
   </div>
   </div>
@@ -541,7 +542,7 @@ body, html {
         <li class="w3-padding-16">
           <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103807684-1931c100-5057-11eb-8ff2-d2da79a26044.jpg" alt="medschool survival guide">
           </li>
-        <li class="w3-padding-16">Alot of medical students suffers from alot of depressions during their studies at <b>medical schools.</b> Our survival guide series will make your journey easier, enjoyable and memorable.</li>
+        <li class="w3-padding-16">Alot of medical students suffers from alot of stress during their studies at <b>medical schools.</b> Our survival guide series will make your journey easier, enjoyable and memorable.</li>
         <li class="w3-light-grey w3-padding-24">
           <button class="w3-button w3-red w3-hover-blue w3-padding-large">Explore</button>
         </li>
