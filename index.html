@@ -48,8 +48,8 @@ body, html {
   line-height: 1.2;
 }
 
-.w3-button
-  {background-color: rgb(10, 10, 10);
+.w3-button {
+  background-color: rgb(32, 95, 3);
   border: none;
   color: white;
   padding: 0px 15px;
@@ -58,7 +58,8 @@ body, html {
   display: inline-block;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 16px;}
+  border-radius: 16px;
+  }
 
 .logo {
     font-family: 'Warnes';font-size: 18px;
@@ -87,7 +88,10 @@ body, html {
 .trackspan {
     font-family: 'Aref Ruqaa';font-size: 18px;
 }
-
+.linksbg {
+  background-color: rgb(4, 167, 4);
+  color: white;
+}
 /* Button */
 
 .btn {
@@ -101,9 +105,9 @@ body, html {
 }
 
 /* On mouse-over */
-.btn:hover {background: rgb(211, 204, 204); color: red;}
+.btn:hover {background: rgb(2, 139, 25); color: rgb(8, 8, 8);}
 
-.readmore {color: rgb(6, 6, 94); font-weight: bold;}
+.readmore {color: rgb(0, 87, 36); font-weight: bold;}
 
 
 /* Forms */
@@ -329,22 +333,22 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-card w3-blue" id="myNavbar" style="opacity: 0.9;">
-    <a href="#home" class="w3-bar-item w3-large w3-button w3-hover-red w3-wide w3-hide-small"><div class="logo"><i class="fa fa-home" style="padding: 0px; font-size: 15px;"></i> ArewaMedics</div></a>
-    <a href="#home" class="w3-bar-item w3-small w3-hover-red w3-button w3-wide w3-hide-large w3-hide-medium"><span class="logo w3-small"><i class="fa fa-home" style="padding: 0px; font-size: 15px;"></i> ArewaMedics</span></a>
+  <div class="w3-bar w3-card" id="myNavbar" style="background-color: rgb(4, 167, 4); opacity: 0.9;">
+    <a href="#home" class="w3-bar-item w3-large w3-button w3-hover-black w3-wide w3-hide-small"><div class="logo"><i class="fa fa-home" style="padding: 0px; font-size: 15px;"></i> ArewaMedics</div></a>
+    <a href="#home" class="w3-bar-item w3-small w3-hover-black w3-button w3-wide w3-hide-large w3-hide-medium"><span class="logo w3-small"><i class="fa fa-home" style="padding: 0px; font-size: 15px;"></i> ArewaMedics</span></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-large w3-hide-small">
       <div class="navlinks">
-      <a href="#about" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-user-md" style="padding: 0px; font-size: 15px;"></i> About</a>
-      <a href="#team" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-user" style="padding: 0px; font-size: 15px;"></i> Team</a>
-      <a href="#work" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-th" style="padding: 0px; font-size: 15px;"></i> Blog</a>
-      <a href="#resources" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-book" style="padding: 0px; font-size: 15px;"></i> Resources</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hover-red" onclick="openSearch()"><i class="fa fa-search" style="padding: 0px; font-size: 15px;"></i> Search</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-user-md" style="padding: 0px; font-size: 15px;"></i> About</a>
+      <a href="#team" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-user" style="padding: 0px; font-size: 15px;"></i> Team</a>
+      <a href="#work" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-th" style="padding: 0px; font-size: 15px;"></i> Blog</a>
+      <a href="#resources" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-book" style="padding: 0px; font-size: 15px;"></i> Resources</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hover-black" onclick="openSearch()"><i class="fa fa-search" style="padding: 0px; font-size: 15px;"></i> Search</a>
       </div>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-hover-red w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-hover-black w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars w3-xlarge" style="margin: 0px;"></i>
     </a>
   </div>
@@ -362,14 +366,14 @@ body, html {
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="trackspan w3-sidebar w3-bar-block w3-blue w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; font-weight: bold; opacity: 0.9;" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-hover-red w3-center w3-padding-16"><i class="fa fa-close"></i></a>
-  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-hover-red">Home</a>
-  <a href="#blog" onclick="w3_close()" class="w3-bar-item w3-hover-red">Blog</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-hover-red">Team</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-hover-red">About</a>
-  <a href="#" onclick="openSearch()" class="w3-bar-item w3-hover-red w3-">Search</a>
-  <a href="#resources" onclick="w3_close()" class="w3-bar-item w3-hover-red">Resources</a>
+<nav class="trackspan w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large" style="background-color: rgb(4, 167, 4); color: white; display:none; font-weight: bold; opacity: 0.9;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-hover-shadow w3-center w3-padding-16"><i class="fa fa-close"></i></a>
+  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-hover-shadow">Home</a>
+  <a href="#blog" onclick="w3_close()" class="w3-bar-item w3-hover-shadow">Blog</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-hover-shadow">Team</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-hover-shadow">About</a>
+  <a href="#" onclick="openSearch()" class="w3-bar-item w3-hover-shadow">Search</a>
+  <a href="#resources" onclick="w3_close()" class="w3-bar-item w3-hover-shadow">Resources</a>
 </nav>
 
 <!-- Header with full-height image -->
@@ -377,7 +381,7 @@ body, html {
   <div class="w3-display-left w3-text-white" style="padding: 60px;">
     <div class="mission w3-text-black w3-hide-small">Our vision</div>
     <div class="mission w3-text-white w3-hide-medium w3-hide-large">Our vision</div>
-    <div class="desc"><p>We hope to become the most reliable source for medical students in <font style="color: rgb(86, 250, 86);">Nigeria.</font></p></div>
+    <div class="desc"><p>We hope to become the most reliable source for medical students in <font style="color: rgb(140, 250, 140);">Nigeria.</font></p></div>
     <div class="mission w3-text-black w3-hide-small">Our mission</div>
     <div class="mission w3-text-white w3-hide-medium w3-hide-large">Our mission</div>
     <div class="desc"><p>Revolutionize healthcare.</p><p>Exploring medical careers.</p></div>
@@ -398,37 +402,37 @@ body, html {
   <div class="w3-row-padding w3-center">  
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-blue w3-xlarge w3-padding-30">Clinical Sciences (MBBS)</li>
+        <li class="linksbg w3-xlarge w3-padding-30">Clinical Sciences (MBBS)</li>
         <li class="w3-padding-10">
           <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103687606-d9a0a180-4f90-11eb-8cce-5cf11cb96cfb.jpg" alt="mbbs">
         </li>
         <li class="w3-padding-10">Medicine, Surgery, Radiology, Opthalmology, Gyneacology, Orthopeadics, Cardiology and More.</li>
         <li class="w3-light-grey w3-padding-20">
-          <button class="w3-button w3-red w3-padding-large">Explore Fields</button>
+          <button class="w3-button w3-red w3-padding-large w3-hover-green">Explore Fields</button>
         </li>
       </ul>
     </div>
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-blue w3-xlarge w3-padding-30">Pharmaceutical Sciences</li>
+        <li class="linksbg w3-xlarge w3-padding-30">Pharmaceutical Sciences</li>
         <li class="w3-padding-10">
           <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103687670-f3da7f80-4f90-11eb-8a66-fe183ca2237f.jpg" alt="Pharma">
         </li>
         <li class="w3-padding-10">Clinical pharmacy, Consulting pharmacy, Industrial pharmacy, Community pharmacy and More.</li>
         <li class="w3-light-grey w3-padding-20">
-          <button class="w3-button w3-red w3-padding-large">Explore Fields</button>
+          <button class="w3-button w3-red w3-padding-large w3-hover-green">Explore Fields</button>
         </li>
       </ul>
     </div>
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-blue w3-xlarge w3-padding-30">Allied Health Sciences</li>
+        <li class="linksbg w3-xlarge w3-padding-30">Allied Health Sciences</li>
         <li class="w3-padding-10">
           <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103688669-6dbf3880-4f92-11eb-8190-cb920260df9c.jpg" alt="Allied">
         </li>
         <li class="w3-padding-10">Radiography, Nursing, Midwifery, Optometry, Medical lab science, Physiotheraphy and More.</li>
         <li class="w3-light-grey w3-padding-20">
-          <button class="w3-button w3-red w3-padding-large">Explore Fields</button>
+          <button class="w3-button w3-red w3-padding-large w3-hover-green">Explore Fields</button>
         </li>
       </ul>
     </div>
@@ -481,73 +485,73 @@ body, html {
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-blue w3-xlarge w3-padding-32">Medical E-library</li>
+        <li class="linksbg w3-xlarge w3-padding-32">Medical E-library</li>
         <li class="w3-padding-16">
          <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103808297-108dba80-5058-11eb-80aa-8ac0ff4c06b0.jpg" alt="e-library">
         </li>
         <li class="w3-padding-16"><b>ArewaMedics</b> has provided a well oriented high yield books and reading materials for both medical and premedical students.</li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-padding-large w3-hover-blue">Explore</button>
+          <button class="w3-button w3-red w3-padding-large w3-hover-green">Explore</button>
         </li>
       </ul>
     </div>
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-blue w3-xlarge w3-padding-32">Online Videos Library</li>
+        <li class="linksbg w3-xlarge w3-padding-32">Online Videos Library</li>
         <li class="w3-padding-16">
           <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103807679-13d47680-5057-11eb-9525-ec82cce0a99a.jpg" alt="videos">
          </li>
         <li class="w3-padding-16"><b>Hey,</b> You must be tired looking for a high yield medical lecture in the internet! <b>ArewaMedics</b> will introduce you to the top qualified medical tutors Online.</li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-padding-large w3-hover-blue">Explore</button>
+          <button class="w3-button w3-red w3-padding-large w3-hover-green">Explore</button>
         </li>
       </ul>
     </div>
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-blue w3-xlarge w3-padding-32">Digital Health</li>
+        <li class="linksbg w3-xlarge w3-padding-32">Digital Health</li>
         <li class="w3-padding-16">
           <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103824443-3759ea00-5074-11eb-881d-9c744b7bc1ba.jpg" alt="digital health">
           </li>
         <li class="w3-padding-16">The advancement of technologies in <b>21st century</b> has revolutionize the practice of medicine and pharma especially using AI, Telemedicine and Medical devices.</li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-hover-blue w3-padding-large">Explore</button>
+          <button class="w3-button w3-red w3-hover-green w3-padding-large">Explore</button>
         </li>
       </ul>
     </div>
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-blue w3-xlarge w3-padding-32">ArewaMedics' Blog</li>
+        <li class="linksbg w3-xlarge w3-padding-32">ArewaMedics' Blog</li>
         <li class="w3-padding-16">
           <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103807672-11721c80-5057-11eb-8993-d5d5bd7f8c4d.jpg" alt="ArewaMedics blogs">
         </li>
         <li class="w3-padding-16"><b>Woo-hoo!</b> Our blog will provide medical students with alot of high yield information on medical cases, digital health innovations and also train high school students who wish to opt into the medical fields.</li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-padding-large w3-hover-blue">Explore</button>
+          <button class="w3-button w3-red w3-padding-large w3-hover-green">Explore</button>
         </li>
       </ul>
     </div>
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-blue w3-xlarge w3-padding-32">Medical Students Blogs</li>
+        <li class="linksbg w3-xlarge w3-padding-32">Medical Students Blogs</li>
         <li class="w3-padding-16">
           <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103826583-64f46280-5077-11eb-997f-37f543030512.jpg" alt="medstudents blogs">
          </li>
         <li class="w3-padding-16"><b>Information Overload,</b> there are alot of blogs and social media platforms providing low yield (<b>less important</b>) resources to medical students. Let's introduce you to the best high yield platforms and blogs for medical students. </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-padding-large w3-hover-blue">Explore</button>
+          <button class="w3-button w3-red w3-padding-large w3-hover-green">Explore</button>
         </li>
       </ul>
     </div>
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-blue w3-xlarge w3-padding-32">Med-School Survival Guide</li>
+        <li class="linksbg w3-xlarge w3-padding-32">Med-School Survival Guide</li>
         <li class="w3-padding-16">
           <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103807684-1931c100-5057-11eb-8ff2-d2da79a26044.jpg" alt="medschool survival guide">
           </li>
         <li class="w3-padding-16">Alot of medical students suffers from alot of stress during their studies at <b>medical schools.</b> Our survival guide series will help to make your journey easier, enjoyable and memorable.</li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-hover-blue w3-padding-large">Explore</button>
+          <button class="w3-button w3-red w3-hover-green w3-padding-large">Explore</button>
         </li>
       </ul>
     </div>
@@ -615,7 +619,7 @@ body, html {
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey" style="padding-top: 200px; padding-bottom: 20px;">
-  <a href="#home" class="w3-button w3-black w3-hover-red">To the top</a><br/>
+  <a href="#home" class="w3-button w3-black w3-hover-green" style="padding: 10px;">To the top</a><br/>
   <div class="w3-large w3-section"><b>Connect With Us</b><br/><br/>
     <i class="fa fa-facebook w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
@@ -624,7 +628,7 @@ body, html {
     <i class="fa fa-youtube w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
   </div><br/>
-  <p><b>Powered by </b><a href="" title="ArewaMedics" target="_blank" class="logo w3-hover-opacity" style="font-size: 15px; color: red;">ArewaMedics</a> <b> 2021</b></p>
+  <p><b>Powered by </b><a href="" title="ArewaMedics" target="_blank" class="logo w3-hover-opacity" style="font-size: 15px; color: rgb(11, 87, 1);">ArewaMedics</a> <b> 2021</b></p>
 </footer>
 </body>
 </html>
