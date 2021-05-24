@@ -382,20 +382,16 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-card" id="myNavbar" style="opacity: 0.9;">
-    {% block head %}
     <a href="{% url 'home' %}" class="w3-bar-item w3-large w3-button w3-hover-black w3-wide w3-hide-small"><div class="logo"><i class="fa fa-home" style="padding: 0px; font-size: 20px;"></i> ArewaMedics</div></a>
     <a href="{% url 'home' %}" class="w3-bar-item w3-small w3-hover-black w3-button w3-wide w3-hide-large w3-hide-medium"><span class="logo w3-small"><i class="fa fa-home" style="padding: 0px; font-size: 18px;"></i> ArewaMedics</span></a>
-    {% endblock %}
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-large w3-hide-small">
-      {% block navlinks %}
         <div class="navlinks">
         <a href="#about" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-user-md" style="padding: 0px; font-size: 18px;"></i> About</a>
         <a href="#team" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-user" style="padding: 0px; font-size: 18px;"></i> Team</a>
         <a href="{% url 'blog' %}" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-th" style="padding: 0px; font-size: 18px;"></i> Blog</a>
         <a href="#resources" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-book" style="padding: 0px; font-size: 18px;"></i> Resources</a>
       </div>
-      {% endblock %}
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
