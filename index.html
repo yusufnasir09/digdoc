@@ -11,355 +11,391 @@
 <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Aref Ruqaa' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Warnes' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Zilla Slab Highlight' rel='stylesheet'>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-body, html {
-  height: 100vh;
-  line-height: 1.2;
-  font-family: 'Roboto', sans-serif;
-}
-
-.w3-button {
-  background-color: rgb(2, 25, 126);
-  border: none;
-  color: white;
-  padding: 0px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  
+  body, html {
+    height: 100%;
+    line-height: 1.2;
   }
+  
+  .w3-button {
+    background-color: rgb(5, 104, 104);
+    color: white;
+    padding: 0px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    }
 
-.w3-ul {
-  box-shadow: 0 2px 4px 2px rgba(166, 166, 168, 0.822);
-}
-
-
-.logo {
-    font-family: 'Warnes';font-size: 18px;
-}
-.mission{
-  font-family: 'Zilla Slab Highlight';font-size: 23px;
-}
-@media screen and (max-width: 600px) {
+  
+    .w3-ul {
+    box-shadow: 0 1px 5px 1px rgba(248, 248, 248, 0.822);
+  }
+  
+  
+  .logo {
+    font-family: 'Lobster Two', cursive;
+      font-size: 20px;
+  }
   .mission{
-  font-size: 18px;
-}
-}
-.navlinks {
-  font-family: 'Amita';font-size: 18px;
-}
-.desc {
-  font-family: Artifika; font-size: 25px;
-  line-height: 1;
-}
-@media screen and (max-width: 600px) {
-.desc {
-  font-family: Artifika; font-size: 18px;
-  line-height: 1;
-}
-}
-.trackspan {
-    font-family: 'Aref Ruqaa';font-size: 18px;
-}
-.linksbg {
-  background-color: rgb(2, 25, 126);
-  color: white;
-}
-/* Button */
-
-.btn {
-  border: none;
-  background-color: inherit;
-  padding: 8px 20px;
-  font-size: 18px;
-  cursor: pointer;
-  display: inline-block;
-  border-radius: 16px;
-}
-
-/* On mouse-over */
-.btn:hover {background: rgb(76, 121, 218); color: rgb(8, 8, 8);}
-
-.readmore {color: rgb(7, 16, 133); font-weight: bold;}
-
-
-.youtube {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 75%; /* 16:9 Aspect Ratio */
-}
-
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* Forms */
-* {
+    font-family: 'Zilla Slab Highlight';font-size: 23px;
+  }
+  @media screen and (max-width: 600px) {
+    .mission{
+    font-size: 18px;
+  }
+  }
+  .navlinks {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+  }
+  .desc {
+    font-family: Artifika; font-size: 40px;
+    line-height: 1;
+  }
+  @media screen and (max-width: 600px) {
+  .desc {
+    font-family: Artifika; font-size: 20px;
+    line-height: 1;
+  }
+  }
+  .trackspan {
+    font-family: 'Oswald', sans-serif;
+      font-size: 18px;
+  }
+  .linksbg {
+    font-family: 'Cairo', sans-serif;
+  }
+  /* Button */
+  
+  .btn {
+    border: none;
+    background-color: inherit;
+    padding: 8px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 16px;
+  }
+  
+  /* On mouse-over */
+  .btn:hover {background: rgb(76, 121, 218); color: rgb(8, 8, 8);}
+  
+  .readmore {color: rgb(7, 16, 133); font-weight: bold;}
+  
+  
+  .youtube {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 75%; /* 16:9 Aspect Ratio */
+  }
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Forms */
+  * {
+      box-sizing: border-box;
+    }
+    
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+    
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+    
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+      .btn {
+        font-size: 15px;
+      }
+    }
+  
+  
+  /* Social media links */
+  
+  .fa {
+    padding: 15px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      cursor: pointer;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  @media screen and (max-width: 600px) {
+  .fa {
+    padding: 8px;
+    font-size: 18px;
+    width: 30px;
+  }
+  }
+  
+  /* Search box */
+  
+  * {
     box-sizing: border-box;
   }
   
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
-  
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-  
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
+  .openBtn {
+    background: #f1f1f1;
     border: none;
-    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 20px;
     cursor: pointer;
-    float: right;
   }
   
-  input[type=submit]:hover {
-    background-color: #45a049;
+  .openBtn:hover {
+    background: #bbb;
   }
   
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
   }
   
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
+  .overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
   }
   
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-    .btn {
-      font-size: 15px;
-    }
-  }
-
-
-/* Social media links */
-
-.fa {
-  padding: 15px;
-  font-size: 20px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
     cursor: pointer;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-@media screen and (max-width: 600px) {
-.fa {
-  padding: 8px;
-  font-size: 18px;
-  width: 30px;
-}
-}
-
-/* Search box */
-
-* {
-  box-sizing: border-box;
-}
-
-.openBtn {
-  background: #f1f1f1;
-  border: none;
-  padding: 10px 15px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.openBtn:hover {
-  background: #bbb;
-}
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-}
-
-.overlay-content {
-  position: relative;
-  top: 46%;
-  width: 80%;
-  text-align: center;
-  margin-top: 30px;
-  margin: auto;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  cursor: pointer;
-  color: white;
-}
-
-.overlay .closebtn:hover {
-  color: #ccc;
-}
-
-.overlay input[type=text] {
-  padding: 15px;
-  font-size: 17px;
-  border: none;
-  float: left;
-  width: 80%;
-  background: white;
-}
-
-.overlay input[type=text]:hover {
-  background: #f1f1f1;
-}
-
-.overlay button {
-  float: left;
-  width: 20%;
-  padding: 15px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.overlay button:hover {
-  background: rgb(73, 117, 238);
-}
-
-/* Search box ends */
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("https://user-images.githubusercontent.com/67826184/104824661-0340af00-5854-11eb-9bbc-f6929d2af810.jpg");
-  min-height: 90%;
-}
-@media screen and (max-width: 600px) {
-.bgimg-1 {
-  background-image: url("https://user-images.githubusercontent.com/67826184/105234211-d1d12780-5b62-11eb-9779-7c6dda082685.jpg");
-  min-height: 75%;
-}
-}
+    color: white;
+  }
+  
+  .overlay .closebtn:hover {
+    color: #ccc;
+  }
+  
+  .overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+  }
+  
+  .overlay input[type=text]:hover {
+    background: #f1f1f1;
+  }
+  
+  .overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .overlay button:hover {
+    background: rgb(73, 117, 238);
+  }
+  
+  /* Search box ends */
+  
 /* Team Card */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 100%;
-  border-radius: 5px;
-  margin-bottom: 50px;
+  border-radius: 3px;
+  margin-bottom: 45px;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-.w3-bar .w3-button {
-  padding: 16px;
+
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://user-images.githubusercontent.com/67826184/119377124-aa2ad100-bcb4-11eb-84e4-fa4efcd12126.jpg");
+    min-height: 100%;
+  }
+
+  .bgimage {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://user-images.githubusercontent.com/67826184/119375101-4d2e1b80-bcb2-11eb-9ef9-783e0b012f8f.jpg");
+    min-height: 100%;
+  }
+  @media screen and (max-width: 600px) {
+  .bgimg-1 {
+    background-image: url("https://user-images.githubusercontent.com/67826184/119377124-aa2ad100-bcb4-11eb-84e4-fa4efcd12126.jpg");
+    min-height: 100%;
+  }
+  }
+
+  /* nav cats */
+  .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  .w3-tag {
+  background-color: #8393ac;
+  border: none;
+  color: black;
+  padding: 7px 18px;
+  font-size: 15px;
+  cursor: pointer;
 }
 
-</style>
+/*@media screen and (max-width: 600px) {
+ .label {
+   text-align: left;
+ }
+  }*/
+
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+  </style>
+
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-card" id="myNavbar" style="background-color: rgb(119, 191, 233); opacity: 0.9;">
-    <a href="#home" class="w3-bar-item w3-large w3-button w3-hover-black w3-wide w3-hide-small"><div class="logo"><i class="fa fa-home" style="padding: 0px; font-size: 15px;"></i> ArewaMedics</div></a>
-    <a href="#home" class="w3-bar-item w3-small w3-hover-black w3-button w3-wide w3-hide-large w3-hide-medium"><span class="logo w3-small"><i class="fa fa-home" style="padding: 0px; font-size: 15px;"></i> ArewaMedics</span></a>
+  <div class="w3-bar w3-card" id="myNavbar" style="opacity: 0.9;">
+    {% block head %}
+    <a href="{% url 'home' %}" class="w3-bar-item w3-large w3-button w3-hover-black w3-wide w3-hide-small"><div class="logo"><i class="fa fa-home" style="padding: 0px; font-size: 20px;"></i> ArewaMedics</div></a>
+    <a href="{% url 'home' %}" class="w3-bar-item w3-small w3-hover-black w3-button w3-wide w3-hide-large w3-hide-medium"><span class="logo w3-small"><i class="fa fa-home" style="padding: 0px; font-size: 18px;"></i> ArewaMedics</span></a>
+    {% endblock %}
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-large w3-hide-small">
-      <div class="navlinks">
-      <a href="#about" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-user-md" style="padding: 0px; font-size: 15px;"></i> About</a>
-      <a href="#team" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-user" style="padding: 0px; font-size: 15px;"></i> Team</a>
-      <a href="#work" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-th" style="padding: 0px; font-size: 15px;"></i> Blog</a>
-      <a href="#resources" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-book" style="padding: 0px; font-size: 15px;"></i> Resources</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hover-black" onclick="openSearch()"><i class="fa fa-search" style="padding: 0px; font-size: 15px;"></i> Search</a>
+      {% block navlinks %}
+        <div class="navlinks">
+        <a href="#about" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-user-md" style="padding: 0px; font-size: 18px;"></i> About</a>
+        <a href="#team" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-user" style="padding: 0px; font-size: 18px;"></i> Team</a>
+        <a href="{% url 'blog' %}" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-th" style="padding: 0px; font-size: 18px;"></i> Blog</a>
+        <a href="#resources" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-book" style="padding: 0px; font-size: 18px;"></i> Resources</a>
       </div>
+      {% endblock %}
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -368,6 +404,7 @@ body, html {
     </a>
   </div>
 </div>
+
 <!-- Search box code -->
 
 <div id="myOverlay" class="overlay">
@@ -382,10 +419,10 @@ body, html {
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 
-<nav class="trackspan w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large" style="background-color: rgb(119, 191, 233); color: rgb(29, 0, 75); display: none; font-weight: bold; opacity: 1;" id="mySidebar">
+<nav class="trackspan w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large" style="background-color: black; color: rgb(255, 255, 255); display:none; font-weight: bold; opacity: 0.9;" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-hover-shadow w3-center w3-padding-16"><i class="fa fa-close"></i></a>
-  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-hover-shadow">Home</a>
-  <a href="#blog" onclick="w3_close()" class="w3-bar-item w3-hover-shadow">Blog</a>
+  <a href="{% url 'home' %}" onclick="w3_close()" class="w3-bar-item w3-hover-shadow">Home</a>
+  <a href="{% url 'blog' %}" onclick="w3_close()" class="w3-bar-item w3-hover-shadow">Blog</a>
   <a href="#team" onclick="w3_close()" class="w3-bar-item w3-hover-shadow">Team</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-hover-shadow">About</a>
   <a href="#" onclick="openSearch()" class="w3-bar-item w3-hover-shadow">Search</a>
@@ -394,11 +431,12 @@ body, html {
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-display-left w3-text-black" style="padding: 40px;">
-    <div class="mission" style="color: teal;">Our vision</div>
-    <div class="desc"><p>We hope to become the most reliable source for medical students in <font style="color: rgb(15, 1, 39);">Nigeria.</font></p></div>
-    <div class="mission" style="color: teal;">Our mission</div>
-    <div class="desc"><p>Revolutionize healthcare.</p><p>Exploring medical careers.</p></div>
+  <div class="w3-display-left" style="color: rgb(255, 255, 255); padding: 40px;">
+    <h1 class="navlinks" style="font-size: 70px;">ArewaMedics</h1>
+     <div class="mission" style="color: rgb(105, 219, 219);">Our vision</div>
+    <div class="navlinks" style="font-size: 30px;"><p>We hope to become the most reliable source for medical students in <font style="color: #ffffff;">Nigeria.</font></p></div>
+    <div class="mission" style="color: rgb(125, 216, 216);">Our mission</div>
+    <div class="navlinks" style="font-size: 30px;"><p>Revolutionize healthcare.</p><p>Exploring medical careers.</p></div>
   </div>
   <div class="w3-display-bottomleft w3-text-white w3-small" style="padding:14px 28px;">
     <i class="fa fa-facebook w3-hover-opacity"></i>
@@ -410,16 +448,17 @@ body, html {
   </div>
 </header>
 
+
 <!-- Medical fields -->
 
-<div class="w3-container" style="background-color: whitesmoke; margin-top: 0px; padding: 0px;" id="innovations">
-  <h3 class="desc w3-center" style="margin-top: 64px;"><b>MEDICAL FIELDS CAREER TRACKS</b></h3>
+<div class="w3-container" style="background-color: rgb(255, 255, 255); margin-top: 80px; padding: 0px;" id="innovations">
+  <h3 class="desc w3-center" style="margin: 70px;">MEDICAL COURSES CAREER TRACK</h3>
   <div class="w3-row-padding w3-center" style="padding-top: 30px; padding-bottom: 40px;">  
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-white w3-hover-shadow">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-light-grey w3-hover-shadow">
         <li class="linksbg w3-xlarge w3-padding-32">Clinical Sciences (MBBS)</li>
         <li class="w3-padding-10">
-          <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103687606-d9a0a180-4f90-11eb-8cce-5cf11cb96cfb.jpg" alt="mbbs">
+          <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/119368163-9b3f2100-bcaa-11eb-8b76-8b2bca6da43e.jpg" alt="mbbs">
         </li>
         <li class="w3-padding-10">Medicine, Surgery, Radiology, Opthalmology, Gyneacology, Orthopeadics, Cardiology and More.</li>
         <li class="w3-light-grey w3-padding-20">
@@ -427,11 +466,11 @@ body, html {
         </li>
       </ul>
     </div>
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="linksbg w3-xlarge w3-padding-32">Pharmaceutical Sciences</li>
+    <div class="w3-third">
+      <ul class="w3-ul w3-light-grey w3-hover-shadow">
+        <li class="linksbg w3-xlarge w3-padding-48">Pharmaceutical Sciences</li>
         <li class="w3-padding-10">
-          <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103687670-f3da7f80-4f90-11eb-8a66-fe183ca2237f.jpg" alt="Pharma">
+          <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/119369843-882d5080-bcac-11eb-8a55-2328c56b11c5.jpg" alt="Pharma">
         </li>
         <li class="w3-padding-10">Clinical pharmacy, Consulting pharmacy, Industrial pharmacy, Community pharmacy and More.</li>
         <li class="w3-light-grey w3-padding-20">
@@ -439,11 +478,11 @@ body, html {
         </li>
       </ul>
     </div>
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-white8 w3-hover-shadow">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-light-grey w3-hover-shadow">
         <li class="linksbg w3-xlarge w3-padding-32">Allied Health Sciences</li>
         <li class="w3-padding-10">
-          <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103688669-6dbf3880-4f92-11eb-8190-cb920260df9c.jpg" alt="Allied">
+          <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/119369316-f02f6700-bcab-11eb-9e57-22798ed202b6.jpg" alt="Allied">
         </li>
         <li class="w3-padding-10">Radiography, Nursing, Midwifery, Optometry, Medical lab science, Physiotheraphy and More.</li>
         <li class="w3-light-grey w3-padding-20">
@@ -454,9 +493,18 @@ body, html {
   </div>
 </div>
 
-<!-- Jamb track -->
 
-<div class="w3-row-padding" style="margin-top: 100px;">
+
+
+<div class="bgimage w3-display-container w3-margin-top" id="homed">
+  <div class="w3-display-left" style="color: rgb(255, 255, 255); padding: 40px;">
+    <h1 class="navlinks" style="font-size: 60px;">Preparing For Your Medical School Journey From Scratch? </h1>
+  </div>
+</div>
+
+<!-- Jamb track -->
+<!--
+<div class="w3-row-padding" style="margin-top: 200px;">
   <div class="trackspan">
     <div class="w3-half w3-center"><br/><br/><h1 class="navlinks w3-hide-small" style="font-size: 60px;">Preparing For Your Medical School Journey From Scratch? </h1>
       <h1 class="navlinks w3-hide-large w3-hide-medium" style="font-size: 30px;">Preparing For Your Medical School Journey From Scratch? </h1>
@@ -467,7 +515,7 @@ body, html {
 </div>
   <div class="w3-half w3-margin-top w3-margin-bottom">
     <div class="w3-container w3-center">
-   <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103694793-d6f77980-4f9b-11eb-8113-b37069195d0e.jpg" width="500px" alt="medstudents" class="responsive">
+   <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/119374567-a0ec3500-bcb1-11eb-896e-9e6309db09bf.jpg" width="500px" alt="medstudents" class="responsive">
     </div>
   <p class="trackspan w3-center w3-hide-medium w3-hide-large" style="margin-bottom: 0px;">About to start your journey into the medical fields? Here's a complete guide and path for students that wish to opt in to medical schools in Nigeria. <b>UTME
     - Post-UTME - Admission</b></p><br/>
@@ -475,12 +523,14 @@ body, html {
 </div>
 </div>
 
-<!-- Female medical track -->
-<div class="w3-row-padding" style="margin-top: 100px;">
+
+
+
+<div class="w3-row-padding" style="margin-top: 200px;">
   <div class="trackspan">
   <div class="w3-half w3-center"><br/><br/><h1 class="navlinks w3-hide-small" style="font-size: 60px;">Women Healthcare Professions. </h1>
     <h1 class="navlinks w3-hide-large w3-hide-medium" style="font-size: 30px;">Women Healthcare Professions. </h1>
-    <p class="trackspan w3-left w3-xlarge w3-hide-small" style="text-align: justify;">Girls' education transforms lives and communities especially in health fields. Our <a href="#"><b>Arewamedics Girls Programme</b></a> will enlighten girls about different medical fields careers.</p>
+    <p class="trackspan w3-left w3-xlarge w3-hide-small" style="text-align: justify;">Girls' education transforms lives and communities especially in health fields. Our <b>Arewamedics Girls Programme</b> will enlighten girls about different medical fields careers.</p>
     <button class="btn readmore w3-hide-small">Find More</button>
   </div>
   </div>
@@ -488,16 +538,19 @@ body, html {
     <div class="w3-container w3-center">
    <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103696337-7ae22480-4f9e-11eb-805d-58bc1d020f47.jpg" width="500px" alt="nurse" class="responsive">
     </div>
-  <p class="trackspan w3-center w3-hide-medium w3-hide-large">Girls' education transforms lives and communities especially in health fields. Our <a href=""><b>Arewamedics Girls Programme</b></a> will enlighten girls about different medical fields careers.</p>
+  <p class="trackspan w3-center w3-hide-medium w3-hide-large">Girls' education transforms lives and communities especially in health fields. Our <b>Arewamedics Girls Programme</b> will enlighten girls about different medical fields careers.</p>
   <center><button class="trackspan btn readmore w3-hide-medium w3-hide-large">Find More</button></center>
   </div>
   </div>
 
+-->
+
+
 <!-- Resources Section -->
-<div class="w3-container w3-center" style="background-color: whitesmoke; padding: 70px 0px" id="resources">
-  <h3 class="desc"><b>MEDICAL STUDENTS STUDY AND RESEARCH RESOURCES</b></h3>
+<div class="w3-container w3-center" style="background-color: rgb(240, 232, 232); padding: 100px 0px; margin-top: 0px;" id="resources">
+  <h3 class="desc">MEDICAL STUDENTS STUDY AND RESEARCH RESOURCES</h3>
   <p class="trackspan w3-large">Explore the categories to look for the Best!.</p>
-  <div class="w3-row-padding" style="background-color: whitesmoke; margin-top:64px">
+  <div class="w3-row-padding" style="margin-top: 80px;">
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
         <li class="linksbg w3-xlarge w3-padding-32">Medical E-library</li>
@@ -505,19 +558,19 @@ body, html {
          <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103808297-108dba80-5058-11eb-80aa-8ac0ff4c06b0.jpg" alt="e-library">
         </li>
         <li class="w3-padding-16"><b>ArewaMedics</b> has provided a well oriented high yield books and reading materials for both medical and premedical students.</li>
-        <li class="w3-light-grey w3-padding-24">
+        <li class="w3-grey w3-padding-24">
           <button class="w3-button w3-black w3-padding-large w3-hover-red">Explore</button>
         </li>
       </ul>
     </div>
-    <div class="w3-third w3-section">
+    <div class="w3-third">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="linksbg w3-xlarge w3-padding-32">Online Videos Library</li>
+        <li class="linksbg w3-xlarge w3-padding-48">Online Videos Library</li>
         <li class="w3-padding-16">
           <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103807679-13d47680-5057-11eb-9525-ec82cce0a99a.jpg" alt="videos">
          </li>
         <li class="w3-padding-16"><b>Hey,</b> You must be tired looking for a high yield medical lecture in the internet! <b>ArewaMedics</b> will introduce you to the top qualified medical tutors Online.</li>
-        <li class="w3-light-grey w3-padding-24">
+        <li class="w3-grey w3-padding-24">
           <button class="w3-button w3-black w3-padding-large w3-hover-red">Explore</button>
         </li>
       </ul>
@@ -529,11 +582,12 @@ body, html {
           <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/103824443-3759ea00-5074-11eb-881d-9c744b7bc1ba.jpg" alt="digital health">
           </li>
         <li class="w3-padding-16">The advancement of technologies in <b>21st century</b> has revolutionize the practice of medicine and pharma especially using AI, Telemedicine and Medical devices.</li>
-        <li class="w3-light-grey w3-padding-24">
+        <li class="w3-grey w3-padding-24">
           <button class="w3-button w3-black w3-hover-red w3-padding-large">Explore</button>
         </li>
       </ul>
     </div>
+    <!--
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
         <li class="linksbg w3-xlarge w3-padding-32">ArewaMedics' Blog</li>
@@ -558,7 +612,7 @@ body, html {
         </li>
       </ul>
     </div>
-    <div class="w3-third w3-section">
+   <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
         <li class="linksbg w3-xlarge w3-padding-32">Med-School Survival Guide</li>
         <li class="w3-padding-16">
@@ -570,24 +624,50 @@ body, html {
         </li>
       </ul>
     </div>
+    -->
   </div>
 </div>
 
-<!-- About Section -->
-<div class="w3-container" style="background-color: whitesmoke; padding:90px 10px; margin-top: 40px;" id="about">
-  <h3 class="desc w3-center">ABOUT US</h3><div class="logo" style="color: rgb(97, 57, 240); font-size: 15px; text-align: center;">ArewaMedics</div>
-  <p class="w3-center" style="font-size: 15px;">Artificial intelligence (AI) algorithms, particularly deep learning, have demonstrated remarkable progress in image-recognition tasks.Artificial intelligence (AI) algorithms, particularly deep learning, have demonstrated remarkable progress in image-recognition tasks Artificial intelligence (AI) algorithms, particularly deep learning, have demonstrated remarkable progress in image-recognition tasks.Artificial intelligence (AI) algorithms, particularly deep learning, have demonstrated remarkable progress in image-recognition tasks Artificial intelligence (AI) algorithms, particularly deep learning, have demonstrated remarkable progress in image-recognition tasks.Artificial intelligence (AI) algorithms, particularly deep learning, have demonstrated remarkable progress in image-recognition tasks.</p>
+
+<!-- Our Blog Post-->
+
+<div class="w3-container" style="padding:100px 16px; margin-top: 70px;" id="blog-post">
+  <h3 class="desc w3-center w3-wide">Our recent blog posts</h3><br/>
+    <!-- Blog entry -->
+    <div class="w3-center w3-card-4 w3-white w3-margin-top">
+      <img class="w3-image" src="https://user-images.githubusercontent.com/67826184/103687606-d9a0a180-4f90-11eb-8cce-5cf11cb96cfb.jpg" alt="Norway">
+        <div class="w3-container">
+          <h3><b>BLOG ENTRY</b></h3>
+          <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+        </div>
+    
+        <div class="w3-container">
+          <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><button class="w3-button w3-padding-large w3-white w3-left w3-border"><b>READ MORE »</b></button></p>
+            </div>
+            <div class="w3-col m4 w3-hide-small">
+              <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- END BLOG ENTRIES -->
 </div>
 
+<!-- Blog posts end-->
+
 <!-- Team -->
-<div class="w3-container" style="padding:100px 16px" id="team">
-  <h3 class="desc w3-center w3-wide"><b>AREWAMEDICS TEAM</b></h3>
+<div class="w3-container" style="padding:60px 16px; margin-top: 100px;" id="team">
+  <h3 class="desc w3-center w3-wide">AREWAMEDICS TEAM</h3>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter w3-margin-bottom">
       <div class="card">
-        <img class="w3-image" style="border-radius: 5px 5px 0 0;" src="https://user-images.githubusercontent.com/67826184/103708637-43c93e80-4fb1-11eb-9b91-6f1f1dfce0b7.png">
+        <img class="w3-image" style="border-radius: 5px 5px 0 0;" src="https://user-images.githubusercontent.com/67826184/119411679-b0d03d00-bce2-11eb-9961-b46143cdcad8.jpg">
         <div class="container">
-          <h4><b>John Doe</b></h4> 
+          <h4><b>Yusuf Nasir Umar</b></h4> 
           <h5><p>Founder</p></h5>
           <h5><p>Bayero University Kano.</p></h5>
         </div>
@@ -595,9 +675,9 @@ body, html {
     </div>
     <div class="w3-quarter w3-margin-bottom">
       <div class="card">
-        <img class="w3-image" style="border-radius: 5px 5px 0 0;" src="https://user-images.githubusercontent.com/67826184/103708637-43c93e80-4fb1-11eb-9b91-6f1f1dfce0b7.png">
+        <img class="w3-image" style="border-radius: 5px 5px 0 0;" src="https://user-images.githubusercontent.com/67826184/119411679-b0d03d00-bce2-11eb-9961-b46143cdcad8.jpg">
         <div class="container">
-          <h4><b>John Doe</b></h4> 
+          <h4><b>Yusuf Nasir Umar</b></h4>
           <h5><p>Co-founder</p></h5>
           <h5><p>Bayero University Kano.</p></h5>
         </div>
@@ -605,20 +685,10 @@ body, html {
     </div>
     <div class="w3-quarter w3-margin-bottom">
       <div class="card">
-        <img class="w3-image" style="border-radius: 5px 5px 0 0;" src="https://user-images.githubusercontent.com/67826184/103708637-43c93e80-4fb1-11eb-9b91-6f1f1dfce0b7.png">
+        <img class="w3-image" style="border-radius: 5px 5px 0 0;" src="https://user-images.githubusercontent.com/67826184/119411679-b0d03d00-bce2-11eb-9961-b46143cdcad8.jpg">
         <div class="container">
-          <h4><b>John Doe</b></h4> 
+          <h4><b>Yusuf Nasir Umar</b></h4> 
           <h5><p>Developer</p></h5>
-          <h5><p>Bayero University Kano.</p></h5>
-        </div>
-      </div>
-    </div>
-    <div class="w3-quarter w3-margin-bottom">
-      <div class="card">
-        <img class="w3-image" style="border-radius: 5px 5px 0 0;" src="https://user-images.githubusercontent.com/67826184/103708637-43c93e80-4fb1-11eb-9b91-6f1f1dfce0b7.png">
-        <div class="container">
-          <h4><b>John Doe</b></h4> 
-          <h5><p>Photographer</p></h5> 
           <h5><p>Bayero University Kano.</p></h5>
         </div>
       </div>
@@ -633,49 +703,21 @@ body, html {
         </div>
       </div>
     </div>
-    <div class="w3-quarter w3-margin-bottom">
-      <div class="card">
-        <img class="w3-image" style="border-radius: 5px 5px 0 0;" src="https://user-images.githubusercontent.com/67826184/103708637-43c93e80-4fb1-11eb-9b91-6f1f1dfce0b7.png">
-        <div class="container">
-          <h4><b>John Doe</b></h4> 
-          <h5><p>Blogger</p></h5>
-          <h5><p>Bayero University Kano.</p></h5>
-        </div>
-      </div>
-    </div>
-    <div class="w3-quarter w3-margin-bottom">
-      <div class="card">
-        <img class="w3-image" style="border-radius: 5px 5px 0 0;" src="https://user-images.githubusercontent.com/67826184/103708637-43c93e80-4fb1-11eb-9b91-6f1f1dfce0b7.png">
-        <div class="container">
-          <h4><b>John Doe</b></h4> 
-          <h5><p>Chief-Editor</p></h5>
-          <h5><p>Bayero University Kano.</p></h5> 
-        </div>
-      </div>
-    </div>
-    <div class="w3-quarter w3-margin-bottom">
-      <div class="card">
-        <img class="w3-image" style="border-radius: 5px 5px 0 0;" src="https://user-images.githubusercontent.com/67826184/103708637-43c93e80-4fb1-11eb-9b91-6f1f1dfce0b7.png">
-        <div class="container">
-          <h4><b>John Doe</b></h4> 
-          <h5><p>Designer</p></h5> 
-          <h5><p>Bayero University Kano.</p></h5>
-        </div>
-      </div>
-    </div>
 </div>
 </div>
+
+<!-- About Section -->
+<div class="w3-container" style="background-color: whitesmoke; padding:90px 10px; margin-top: 40px;" id="about">
+  <h3 class="desc w3-center">ABOUT US</h3><div class="logo" style="color: rgb(29, 4, 119); font-size: 15px; text-align: center;"><b>ArewaMedics</b></div>
+  <p class="w3-center" style="font-size: 15px;">Artificial intelligence (AI) algorithms, particularly deep learning, have demonstrated remarkable progress in image-recognition tasks.Artificial intelligence (AI) algorithms, particularly deep learning, have demonstrated remarkable progress in image-recognition tasks Artificial intelligence (AI) algorithms, particularly deep learning, have demonstrated remarkable progress in image-recognition tasks.Artificial intelligence (AI) algorithms, particularly deep learning, have demonstrated remarkable progress in image-recognition tasks Artificial intelligence (AI) algorithms, particularly deep learning, have demonstrated remarkable progress in image-recognition tasks.Artificial intelligence (AI) algorithms, particularly deep learning, have demonstrated remarkable progress in image-recognition tasks.</p>
+</div>
+
+
 <!-- Footer -->
 
-<footer class="w3-row-padding w3-center" style="background-color: whitesmoke;">
-  <div class="w3-half w3-padding-32">
-    <div class="youtube"> 
-      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-    </div><br/><h1 class="navlinks w3-hide-small w3-center" style="font-size: 40px;">Subscribe For Our Youtube Channel To find our latest Videos. </h1>
-    <h1 class="navlinks w3-hide-large w3-hide-medium w3-center" style="font-size: 20px;">Subscribe For Our Youtube Channel.</h1>
-</div>
-
-  <div class="w3-half w3-section">
+<footer class="w3-center" style="background-color: white;">
+ 
+  <div class="w3-section">
     <img class="w3-image w3-round-large" src="https://user-images.githubusercontent.com/67826184/104812428-5c7ff280-5802-11eb-9c3b-93c177330adb.jpg" width="500px" alt="medstudents" class="responsive"><br/>    
     <br/><b>Connect With Us</b><br/><br/>
     <i class="fa fa-facebook w3-hover-opacity"></i>
@@ -688,7 +730,7 @@ body, html {
   </div><br/>
   
 </footer>
-<div style="background-color: rgb(43, 41, 41); padding: 20px; color: white; text-align: center;"><p>Powered by <a href="" title="ArewaMedics" target="_blank" class="logo w3-hover-opacity" style="font-size: 15px; color: rgb(92, 116, 248); text-decoration:none;">ArewaMedics </a>  2021</p></div>
+<div style="background-color: rgb(92, 86, 86); padding: 70px; color: white; text-align: center;"><p>Powered by <a href="" title="ArewaMedics" target="_blank" class="logo w3-hover-opacity" style="font-size: 25px; color: rgb(255, 255, 255);">ArewaMedics</a>  2021</p></div>
 
 <script>
 
