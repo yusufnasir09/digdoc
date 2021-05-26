@@ -64,11 +64,17 @@
     font-family: Artifika; font-size: 40px;
     line-height: 1;
   }
+  .w3-row-padding{
+    padding-top: 30px; padding-bottom: 40px; padding-left: 25px; padding-right: 25px;
+  }
   @media screen and (max-width: 600px) {
   .desc {
-    font-family: Artifika; font-size: 20px;
+    font-family: Artifika; font-size: 25px;
     line-height: 1;
   }
+ .w3-row-padding{
+  padding: 0px;
+}
   }
   .trackspan {
     font-family: 'Oswald', sans-serif;
@@ -383,7 +389,7 @@
 <div class="w3-top">
   <div class="w3-bar w3-card" id="myNavbar" style="opacity: 0.9;">
     <a href="{% url 'home' %}" class="w3-bar-item w3-large w3-button w3-hover-black w3-wide w3-hide-small"><div class="logo"><i class="fa fa-home" style="padding: 0px; font-size: 20px;"></i> ArewaMedics</div></a>
-    <a href="{% url 'home' %}" class="w3-bar-item w3-small w3-hover-black w3-button w3-wide w3-hide-large w3-hide-medium"><span class="logo w3-small"><i class="fa fa-home" style="padding: 0px; font-size: 18px;"></i> ArewaMedics</span></a>
+    <a href="{% url 'home' %}" class="w3-bar-item w3-large w3-hover-black w3-button w3-wide w3-hide-large w3-hide-medium"><div class="logo"><i class="fa fa-home" style="padding: 0px; font-size: 18px;"></i> ArewaMedics</div></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-large w3-hide-small">
         <div class="navlinks">
@@ -396,7 +402,7 @@
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
     <a href="javascript:void(0)" class="w3-bar-item w3-hover-black w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars w3-xlarge" style="margin: 0px;"></i>
+      <i class="fa fa-bars w3-xlarge" style="margin: 0px; color: rgb(125, 216, 216);"></i>
     </a>
   </div>
 </div>
@@ -449,7 +455,7 @@
 
 <div class="w3-container" style="background-color: rgb(255, 255, 255); margin-top: 80px; padding: 0px;" id="innovations">
   <h3 class="desc w3-center" style="margin: 70px;">MEDICAL COURSES CAREER TRACK</h3>
-  <div class="w3-row-padding w3-center" style="padding-top: 30px; padding-bottom: 40px;">  
+  <div class="w3-row-padding w3-center">  
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-light-grey w3-hover-shadow">
         <li class="linksbg w3-xlarge w3-padding-32">Clinical Sciences (MBBS)</li>
@@ -627,7 +633,7 @@
 
 <!-- Our Blog Post-->
 
-<div class="w3-container" style="padding:100px 16px; margin-top: 70px;" id="blog-post">
+<div class="w3-container" style="padding:100px 6px; margin-top: 70px;" id="blog-post">
   <h3 class="desc w3-center w3-wide">Our recent blog posts</h3><br/>
     <!-- Blog entry -->
     <div class="w3-center w3-card-4 w3-white w3-margin-top">
